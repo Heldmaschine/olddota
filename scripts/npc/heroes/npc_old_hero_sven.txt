@@ -1,0 +1,50 @@
+"npc_old_hero_sven"//sven ready(some particle issues)
+{
+		// General
+		// 
+		"BaseClass"					"npc_dota_hero"	// Class of entity of link to.
+		"override_hero"				"npc_dota_hero_sven"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"old_sven_storm_hammer_lua"			// Ability 1.
+		"Ability2"					"old_sven_great_cleave_lua"			// Ability 2.
+		"Ability3"					"old_sven_toughness_aura_lua"			// Ability 3.
+		"Ability4"					"old_sven_gods_strength_lua"		// Ability 4.
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"1"			// Physical protection.
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"			// Type of attack - melee, ranged, etc.
+		"AttackDamageMin"			"28"			// Damage range min.
+		"AttackDamageMax"			"32"			// Damage range max.
+		"AttackAcquisitionRange"	"650"		// Range within a target can be acquired.
+		"AttackRange"				"125"		// Range within a target can be attacked.
+	
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"23"			// Base strength
+		"AttributeStrengthGain"		"2.7"			// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"			// Base intelligence
+		"AttributeIntelligenceGain"	"1.3"			// Intelligence bonus per level.
+		"AttributeBaseAgility"		"14"			// Base agility
+		"AttributeAgilityGain"		"2.2"			// Agility bonus per level.
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"300"		// Speed
+		"MovementTurnRate"			"0.6"		// Turning rate.
+		"FollowRange"				"250"		// Distance to keep when following
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"150"			// Base health.
+		"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+		"StatusMana"				"140"			// Base mana.
+		"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+}

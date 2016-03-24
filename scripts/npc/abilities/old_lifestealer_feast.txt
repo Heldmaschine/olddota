@@ -1,0 +1,25 @@
+"old_lifestealer_feast"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------												
+		"BaseClass"						"skeleton_king_vampiric_aura"
+		"AbilityTextureName"			"life_stealer_feast"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura_radius"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura"			"15 30 40 50"
+			}
+		}
+}

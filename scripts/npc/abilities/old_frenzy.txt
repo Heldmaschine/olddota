@@ -1,0 +1,64 @@
+"old_frenzy"
+{
+ // General
+//-------------------------------------------------------------------------------------------------------------
+	"BaseClass" "ability_datadriven"
+	"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"MaxLevel" "4"
+	"AbilityTextureName" "life_stealer_rage"
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"MaxLevel" "4"
+	"AbilityCastPoint" "0.0"
+	"AbilityCooldown" "40.0"
+	"AbilityManaCost" "80 90 110 130"
+	
+	"AbilitySpecial"
+	{	
+		"01"
+		{
+			"var_type" "FIELD_INTEGER"
+			"frenzy_bonus_attack_speed" "25 50 75 100"
+		}
+		"02"
+		{
+			"var_type" "FIELD_INTEGER"
+			"frenzy_extra_incoming_damage_percentage" "5 10 15 20"
+		}
+		"03"
+		{
+			"var_type" "FIELD_FLOAT"
+			"frenzy_duration" "20.0"
+		}
+	}
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"Target" "CASTER"
+			"ModifierName" "modifier_ability_frenzy"
+		}
+		"FireSound"
+		{
+			"EffectName" "DOTA_Item.MaskOfMadness.Activate"
+			"Target" "CASTER"
+		}
+	}
+	"Modifiers"
+	{
+		"modifier_ability_frenzy"
+		{
+			"Duration" "%frenzy_duration"
+			"Passive" "0"
+			"IsHidden" "0"
+			"IsBuff" 	"1"
+			"EffectName" "particles/items2_fx/mask_of_madness.vpcf"
+			"EffectAttachType" "follow_origin"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%frenzy_bonus_attack_speed"
+				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "%frenzy_extra_incoming_damage_percentage"
+			}
+		}
+	}
+ }

@@ -1,0 +1,32 @@
+"old_razor_stormseeker_lua"
+{
+// General
+//-------------------------------------------------------------------------------------------------------------
+	"BaseClass" "ability_lua"
+	"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityType" "DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
+	"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_NO"
+	"AbilityTextureName" "razor_eye_of_the_storm"
+	"AbilityCastRange"				"500 550 600"
+	"MaxLevel" "3"
+	"ScriptFile"	"old_razor_stormseeker_lua"
+	"AbilitySpecial"
+	{	
+	"01"
+	{
+		"var_type" "FIELD_INTEGER"
+		"aura_radius" "500 550 600"
+	}
+	"02"
+	{
+		"var_type" "FIELD_INTEGER"
+		"aura_damage_per_tick" "60 90 120"
+	}
+	"03"
+	{
+		"var_type" "FIELD_FLOAT"
+		"aura_damage_interval" "3.25"
+	}
+	}
+}

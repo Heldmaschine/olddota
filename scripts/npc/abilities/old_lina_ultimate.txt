@@ -1,0 +1,34 @@
+//=================================================================================================================
+// Ability: Lina's Fiery Soul Lua
+//=================================================================================================================
+"old_lina_ultimate_lua"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"BaseClass"					"ability_lua"
+	"AbilityTextureName"				"lina_fiery_soul"
+	"ScriptFile"					"old_lina_ultimate_lua"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityDuration"				"20 25 30 30"
+	"AbilityCooldown" 				"30.0"
+	"AbilityManaCost" 				"60"
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"ultimate_attack_speed_bonus"	"10 20 30 50"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"duration_tooltip"			"20 25 30 30"
+		}
+	}
+}

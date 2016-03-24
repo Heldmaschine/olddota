@@ -1,0 +1,19 @@
+//=================================================================================================================
+// Furion: Teleportation Lua
+//=================================================================================================================
+"old_furion_teleportation_lua"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+	"BaseClass"					"ability_lua"
+	"AbilityTextureName"				"furion_teleportation"
+	"ScriptFile"					"old_furion_teleportation_lua"
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"3 2.5 2 1.5"
+	"AbilityCooldown"				"60 50 40 30"
+	"AbilityManaCost"				"75 65 55 50"
+}

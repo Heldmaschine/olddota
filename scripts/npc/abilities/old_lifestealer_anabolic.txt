@@ -1,0 +1,39 @@
+"old_lifestealer_anabolic"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------												
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"life_stealer_consume"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"10 20 30 40"
+			}
+			"02"s
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"3 6 9 12"
+			}
+		}
+
+	"Modifiers"
+	{
+		"modifier_old_lifestealer_anabolic"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%bonus_attack_speed"
+			    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%bonus_movement_speed" 
+			}	
+		}
+	}
+}

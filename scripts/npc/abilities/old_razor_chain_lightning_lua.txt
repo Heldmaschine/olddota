@@ -1,0 +1,59 @@
+"old_razor_chain_lightning" // try lua
+{
+// General
+//-------------------------------------------------------------------------------------------------------------
+"BaseClass" "harpy_storm_chain_lightning"//"ability_lua"//"ability_datadriven"
+"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+"AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+"AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
+"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_NO"
+"MaxLevel" "4"
+"AbilityTextureName" "harpy_storm_chain_lightning"
+//"ScriptFile"		"old_razor_chain_lightning_projectile_lua"
+// Casting
+//-------------------------------------------------------------------------------------------------------------	
+"AbilityCastPoint" "0.1 0.1 0.1 0.1"
+// Time
+//-------------------------------------------------------------------------------------------------------------
+"AbilityCooldown" "11.0"
+// Cost
+//-------------------------------------------------------------------------------------------------------------
+"AbilityManaCost" "90 105 125 145"
+// Cast Range
+//-------------------------------------------------------------------------------------------------------------
+"AbilityCastRange" "800 800 800 800"
+// Stats
+//-------------------------------------------------------------------------------------------------------------
+"AbilityModifierSupportValue" "0.35" // can chain to multiple units
+// Special
+//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"initial_damage"		"75 150 225 290"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"jump_range"			"500"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"jump_delay"			"0.25"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"damage_percent_loss"	"15.0"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"max_targets"			"3 5 7 9"
+		}
+	}
+}

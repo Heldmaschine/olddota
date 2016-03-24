@@ -1,0 +1,25 @@
+"old_davion_dragon_blood_lua"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass" "ability_lua"
+	"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" "dragon_knight_dragon_blood"
+	"MaxLevel" "4"
+	"ScriptFile"	"old_davion_dragon_blood_lua"
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type" "FIELD_INTEGER"
+			"bonus_health_regen" "100 200 300 400"
+		}
+		"02"
+		{
+			"var_type" "FIELD_INTEGER"
+			"bonus_armor" "1 2 3 4"
+		}
+	}
+}

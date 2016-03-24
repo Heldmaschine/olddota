@@ -1,0 +1,40 @@
+"old_sven_gods_strength_lua"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"AbilityTextureName"					"sven_gods_strength"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"FightRecapLevel"				"1"
+	"ScriptFile"					"old_sven_gods_strength_lua"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.3 0.3 0.3"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"120.0 90.0 80.0"
+	"AbilityDuration"				"40 40 40"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"150 200 250"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"gods_strength_damage"		"75 125 175"		
+		}
+		"02"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"gods_strength_duration"	"40.0 40.0 40.0"
+		}
+	}
+}

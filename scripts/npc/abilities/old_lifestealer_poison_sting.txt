@@ -1,0 +1,34 @@
+"old_lifestealer_poison_sting"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                     "venomancer_poison_sting"
+    "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"            "venomancer_poison_sting"
+    
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+           "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "3.0"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "damage"                    "2 4 7 10"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "movement_speed"            "-10 -20 -30 -40"
+            }  
+
+    }
+
+}

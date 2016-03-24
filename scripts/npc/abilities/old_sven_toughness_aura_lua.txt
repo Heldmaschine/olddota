@@ -1,0 +1,37 @@
+"old_sven_toughness_aura_lua"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"AbilityTextureName"			"sven_warcry"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+	"ScriptFile"					"old_sven_toughness_aura_lua"
+
+	"AbilityCastRange"				"300"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"warcry_armor"		"1 2 4 5"		
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"aura_radius"		"300"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"duration_hero"		"2"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"duration"			"4"
+		}
+	}
+}

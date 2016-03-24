@@ -1,0 +1,112 @@
+"old_lifestealer_rage"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                     "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"            "life_stealer_rage"
+
+
+    "precache"
+    {
+        "soundfile"         "soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+        "particle"          "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf"
+        "particle"          "particles/status_fx/status_effect_life_stealer_rage.vpcf"
+    }
+
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"              "0"
+    "AbilityCastRange"              "0"
+    
+    // Time     
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"               "180 165 150"
+    
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "150 200 250"
+    
+    "AbilityDuration"               "13 18 22"
+    
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "bonus_damage"          "10 20 30"
+        }
+        "02"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "duration"              "13.0 18.0 22.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"    "Hero_LifeStealer.Rage"
+            "Target"        "CASTER"
+        }
+// RunScript purges naix may be needed
+        //"RunScript"
+        //{
+         //   "ScriptFile"    "scripts/vscripts/heroes/hero_life_stealer/rage.lua"
+        //    "Function"        "rage_start"
+       // }
+
+        "ApplyModifier"
+        {
+            "ModifierName"  "modifier_rage_ability"
+            "Target"        "CASTER"
+            "Duration"      "%duration"
+        }
+
+    }
+
+    "Modifiers"
+    {
+        "modifier_rage_ability"
+        {
+            "Passive"           "0"
+            "IsHidden"          "0"
+            "IsDebuff"          "0"
+
+            "StatusEffectName"         "particles/status_fx/status_effect_life_stealer_rage.vpcf"        
+            "StatusEffectPriority"  "10"
+    
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "EffectName"        "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf"
+                    "EffectAttachType"  "attach_hitloc"
+                    "Target"            "CASTER"
+                    "ControlPointEntities"
+                    {
+                        "CASTER"    "attach_hitloc"
+                        "CASTER"    "attach_hitloc"
+                        "CASTER"    "attach_hitloc"
+                    }
+                }
+            }
+    
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%bonus_damage"
+            }
+
+            "States"
+            {
+                "MODIFIER_STATE_MAGIC_IMMUNE"        "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+}
+

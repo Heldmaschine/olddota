@@ -1,0 +1,61 @@
+"npc_old_hero_lifestealer"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_hero"	// Class of entity of link to.
+		"override_hero"				"npc_dota_hero_life_stealer"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"				"old_lifestealer_anabolic"				// Ability 1
+		"Ability2"				"old_lifestealer_feast"			// Ability 2
+		"Ability3"				"old_lifestealer_poison_sting"		// Ability 3
+		"Ability4"				"old_lifestealer_rage"		// Ability 4
+		"Ability5"				"attribute_bonus"				// Ability 9 - Bonuses.
+		"Ability6"				""				// Ability 9 - Bonuses.
+		"Ability7"				""				// Ability 9 - Bonuses.
+		"Ability8"				""				// Ability 9 - Bonuses.
+		"Ability9"				""				// Ability 9 - Bonuses.	
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"			"1"										// Physical protection.
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"16"									// Damage range min.
+		"AttackDamageMax"			"18"									// Damage range max.
+		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackAnimationPoint"		"0.46"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
+		"AttackRange"				"100"									// Range within a target can be attacked.
+//		"ProjectileModel"			"leshrac_base_attack"						// Particle system model for projectile.
+//		"ProjectileSpeed"			"900"									// Speed of projectile.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"15"									// Base strength
+		"AttributeStrengthGain"		"1.4"									// Strength bonus per level.
+		"AttributeBaseIntelligence"	"15"									// Base intelligence
+		"AttributeIntelligenceGain"	"1.5"									// Intelligence bonus per level.
+		"AttributeBaseAgility"		"26"									// Base agility
+		"AttributeAgilityGain"		"4.05"									// Agility bonus per level.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementSpeed"				"295"									// Speed.
+		"MovementTurnRate"			"0.25"									// Turning rate.
+		"HasAggressiveStance"       "1"                          			// Plays alternate idle/run animation when near enemies
+
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"150"			// Base health.
+		"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+
+		
+	}

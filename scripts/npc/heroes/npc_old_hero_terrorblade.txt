@@ -1,0 +1,64 @@
+"npc_old_hero_terrorblade"
+	{
+// General
+		"BaseClass"					"npc_dota_hero"	
+		"override_hero"				"npc_dota_hero_terrorblade"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"old_terrorblade_soulsteal"		// Ability 1.
+		"Ability2"					"old_terrorblade_conjure_image"			// Ability 2.
+		"Ability3"					"old_terrorblade_metamorhosis"		// Ability 3.
+		"Ability4"					"old_terrorblade_sunder"			// Ability 4.
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"1"			// Physical protection.
+		//"MagicalResistance"			"25"			// Magical protection.
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"			// Type of attack - melee, ranged, etc.
+		"AttackDamageMin"			"26"			// Damage range min.
+		"AttackDamageMax"			"32"			// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.5"			// Speed of attack.
+		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"650"		// Range within a target can be acquired.
+		"AttackRange"				"100"		// Range within a target can be attacked.
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"17"			// Base strength
+		"AttributeStrengthGain"		"2.3"			// Strength bonus per level.
+		"AttributeBaseIntelligence"	"15"			// Base intelligence
+		"AttributeIntelligenceGain"	"1.75"			// Intelligence bonus per level.
+		"AttributeBaseAgility"		"22"			// Base agility
+		"AttributeAgilityGain"		"3.2"			// Agility bonus per level.
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"310"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+		"FollowRange"				"250"		// Distance to keep when following
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"			// Base health.
+		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
+		"StatusMana"				"200"			// Base mana.
+		"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+	
+		// Team
+		//----------------------------------------------------------------
+		//"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		//"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		//"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		//"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	}

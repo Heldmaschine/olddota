@@ -1,0 +1,52 @@
+"old_venge_terror_lua"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+	//"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	"BaseClass"					"ability_lua"
+	"AbilityTextureName"				"vengefulspirit_wave_of_terror"
+	"ScriptFile"					"old_venge_terror_lua"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"500"
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"15"
+	"AbilityDuration"				"20"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"40 40 40 40"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"terror_aoe"		"500"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"armor_reduction"	"-3 -4 -5 -6"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"damage_reduction"	"-5 -10 -15 -20"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"tooltip_duration"	"20"
+		}
+		
+	}
+}

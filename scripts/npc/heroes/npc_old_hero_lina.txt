@@ -1,0 +1,61 @@
+"npc_old_hero_lina"//Lina Finished
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_hero"							// Class of entity of link to.
+		"override_hero"				"npc_dota_hero_lina"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityLayout"				"4"
+		"Ability1"					"old_lina_dragon_slave_lua"										// Ability 1.
+		"Ability2"					"old_lina_lsa_lua"										// Ability 2.
+		"Ability3"					"old_lina_ultimate_lua"										// Ability 3.
+		"Ability4"					"old_lina_laguna_blade_lua"										// Ability 4.
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"									// Physical protection.
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"14"										// Damage range min.
+		"AttackDamageMax"			"18"										// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"				// Type of damage dealt. 
+		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackAcquisitionRange"	"650"									// Range within a target can be acquired.
+		"AttackRange"				"600"									// Range within a target can be attacked.
+		"ProjectileSpeed"			"900"									// Speed of projectile.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLIGENCE"
+		"AttributeBaseStrength"		"18"										// Base strength
+		"AttributeStrengthGain"		"1.5"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"19"										// Base intelligence
+		"AttributeIntelligenceGain"	"3.2"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"16"										// Base agility
+		"AttributeAgilityGain"		"1.5"										// Agility bonus per level.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"280"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
+		"HasAggressiveStance"		"0"										// Plays alternate idle/run animation when near enemies
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"				"150"									// Base health.
+		"StatusHealthRegen"			"0.25"									// Health regeneration rate.
+		"StatusMana"				"200"										// Base mana.
+		"StatusManaRegen"			"0.01"									// Mana regeneration rate.
+
+		
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
+
+	}	

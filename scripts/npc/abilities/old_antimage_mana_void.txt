@@ -1,0 +1,67 @@
+"old_antimage_mana_void"
+{
+	//NOTE: still have 1 AOE may have some troubles with phased units
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"antimage_mana_void"//"ability_lua"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"		
+	"FightRecapLevel"				"2"
+	"AbilityTextureName"			"antimage_mana_void"
+	"AOERadius"						"%mana_void_aoe_radius"
+	//"ScriptFile"					"old_antimage_mana_void_lua"
+
+	// Precache
+	//-------------------------------------------------------------------------------------------------------------
+	//"precache"
+	//{
+	//	"particle"		"particles/units/heroes/hero_antimage/antimage_manavoid.vpcf"
+	//	"soundfile"		"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
+	//}
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"600"
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"120.0 120.0 120.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"175 225 275"
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityModifierSupportValue"	"0.0"	// damage only
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"mana_void_damage_per_mana"		"0.6 0.85 1.1"
+		}
+		
+		"02"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"mana_void_ministun"			"0.1 0.2 0.3"
+		}
+		
+		"03"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"mana_void_aoe_radius"			"1"//min collision = 16
+		}
+	}
+	
+}

@@ -1,0 +1,608 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_ancient_apparition_barebones"
+	{
+		"AbilityLayout" 		"6"
+		"override_hero"			"npc_dota_hero_ancient_apparition"
+		"SoundSet"				"0"	
+		"Ability1"				"example_ability" 
+		"Ability2"				"reflex_empty2" 
+		"Ability3"				"reflex_empty3" 
+		"Ability4"				"reflex_empty4"
+		"Ability5"				"reflex_empty5"
+		"Ability6"				"reflex_empty6"
+		"Ability7"				""
+		"Ability8"				""
+		"Ability9"				""
+		"Ability10"				""
+		"Ability11"				""
+		"Ability12"				""
+		"Ability13"				""
+		"Ability14"				""
+		"Ability15"				""
+		"Ability16"				""
+	
+		"ArmorPhysical"				"0"									// Physical protection.
+		"MagicalResistance"				"0"									// Magical protection (percentage).
+	
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"1"										// Damage range min.
+		"AttackDamageMax"			"1"										// Damage range max.
+	
+		//"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"										// Base strength
+		"AttributeStrengthGain"		"0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"										// Base intelligence
+		"AttributeIntelligenceGain"	"0"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"										// Base agility
+		"AttributeAgilityGain"		"0"										// Agility bonus per level.
+	
+		"BountyXP"					"0"									// Experience earn.
+		"BountyGoldMin"				"0"										// Gold earned min.
+		"BountyGoldMax"				"0"										// Gold earned max.
+	
+		//"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		//"RingRadius"				"70"
+	
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"360"									// Speed.
+		"MovementTurnRate"			"1.0"									// Turning rate.
+	
+		"StatusHealth"				"981"									// Base health.
+		"StatusHealthRegen"			"0.0"									// Health regeneration rate.
+		"StatusMana"				"387"										// Base mana.
+		"StatusManaRegen"			"99.96"									// Mana regeneration rate.
+	
+		"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+	}
+	//=================================================================================================================
+	// HERO: Nature's Prophet
+	//=================================================================================================================
+	"npc_dota_hero_furion_lua"
+	{
+		"override_hero"				"npc_dota_hero_earthshaker"			// Hero to override
+		"Ability1"					"furion_sprout_lua"				// Ability 1
+		"Ability2"					"furion_teleportation_lua"
+		"Ability3"					"furion_force_of_nature_lua"
+		"Ability4"					"furion_wrath_of_nature_lua"
+	}
+	//=================================================================================================================
+	// HERO: Lina
+	//=================================================================================================================
+	"npc_dota_hero_lina_lua"
+	{
+		"override_hero"					"npc_dota_hero_abaddon"			// Hero to override
+		"Ability1"				"lina_dragon_slave_lua"						// Ability 1
+		"Ability2"				"lina_light_strike_array_lua"					// Ability 2
+		"Ability3"				"lina_fiery_soul_lua"					// Ability 3
+		"Ability4"				"lina_laguna_blade_lua"						// Ability 4
+	}
+	//=================================================================================================================
+	// HERO: Pudge
+	//=================================================================================================================
+	"npc_dota_hero_test_pudge_lua"
+	{
+		"override_hero"				"npc_dota_hero_pudge"			// Hero to override
+		"Ability1"					"pudge_meat_hook_lua"				// Ability 1
+		"Ability2"					"pudge_rot_lua"				// Ability 2
+		"Ability3"					"pudge_flesh_heap_lua"
+		"Ability4"					"pudge_dismember_lua"
+	}
+	// Lua modifier_storm_spirit_overload_debuff
+	//=================================================================================================================
+	// HERO: Sven
+	//=================================================================================================================
+	"npc_dota_hero_test_sven_lua"
+	{
+		"override_hero"				"npc_dota_hero_storm_spirit"//"npc_dota_hero_sven"			// Hero to override
+		"Ability1"					"sven_storm_bolt_lua"				// Ability 1
+		"Ability2"					"sven_great_cleave_lua"
+		"Ability3"					"sven_warcry_lua"
+		"Ability4"					"sven_gods_strength_lua"
+	}
+	//=================================================================================================================
+	// HERO: Vengeful Spirit
+	//=================================================================================================================
+	"npc_dota_hero_vengefulspirit_lua"
+	{
+		"override_hero"					"npc_dota_hero_batrider"//vengefulspirit"			// Hero to override
+		"Ability1"				"vengefulspirit_magic_missile_lua"				// Ability 1
+		"Ability2"				"vengefulspirit_wave_of_terror_lua"				// Ability 2
+		"Ability3"				"vengefulspirit_command_aura_lua"				// Ability 3
+		"Ability4"				"vengefulspirit_nether_swap_lua"				// Ability 4
+	}
+	"npc_old_hero_antimage"//AM pretty ready
+	{
+			// General
+			"BaseClass"					"npc_dota_hero"	
+			"override_hero"				"npc_dota_hero_antimage"
+			
+			// Abilities
+			//----------------------------------------------------------------
+			
+			"Ability1"					"old_antimage_mana_break"		// Ability 1.
+			"Ability2"					"old_antimage_blink"			// Ability 2.
+			"Ability3"					"old_antimage_spell_shield"		// Ability 3.
+			"Ability4"					"old_antimage_mana_void"			// Ability 4.
+			// Armor
+			//----------------------------------------------------------------
+			"ArmorPhysical"				"1"			// Physical protection.
+			//"MagicalResistance"			"25"			// Magical protection.
+		
+			// Attack
+			//----------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"			// Type of attack - melee, ranged, etc.
+			"AttackDamageMin"			"22"			// Damage range min.
+			"AttackDamageMax"			"25"			// Damage range max.
+			"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+			"AttackRate"				"1.45"			// Speed of attack.
+			"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+			"AttackAcquisitionRange"	"650"		// Range within a target can be acquired.
+			"AttackRange"				"100"		// Range within a target can be attacked.
+			// Attributes
+			//----------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+			"AttributeBaseStrength"		"16"			// Base strength
+			"AttributeStrengthGain"		"1.9"			// Strength bonus per level.
+			"AttributeBaseIntelligence"	"15"			// Base intelligence
+			"AttributeIntelligenceGain"	"1.5"			// Intelligence bonus per level.
+			"AttributeBaseAgility"		"22"			// Base agility
+			"AttributeAgilityGain"		"2.8"			// Agility bonus per level.
+		
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+			"MovementSpeed"				"310"		// Speed
+			"MovementTurnRate"			"0.5"		// Turning rate.
+			"FollowRange"				"250"		// Distance to keep when following
+		
+			// Status
+			//----------------------------------------------------------------
+			"StatusHealth"				"150"			// Base health.
+			"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+			"StatusMana"				"100"			// Base mana.
+			"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+		
+			// Team
+			//----------------------------------------------------------------
+			//"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+			//"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+			//"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+			//"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+			
+			// Vision
+			//----------------------------------------------------------------
+			"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+			"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	}
+	"npc_old_hero_dragon_knight"
+	{
+			// General
+			//
+			"BaseClass"					"npc_dota_hero"	// Class of entity of link to.
+			"override_hero"				"npc_dota_hero_dragon_knight"
+			
+			// Abilities
+			//----------------------------------------------------------------
+			
+			"Ability1"					"old_davion_breathe_fire"			// Ability 1.
+			"Ability2"					"old_davion_dragon_tail"			// Ability 2.
+			"Ability3"					"old_davion_dragon_blood_lua"			// Ability 3.
+			"Ability4"					"old_davion_elder_dragon_form_lua"		// Ability 4.
+			// Armor
+			//----------------------------------------------------------------
+			"ArmorPhysical"				"2"			// Physical protection.
+		
+			// Attack
+			//----------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"			// Type of attack - melee, ranged, etc.
+			"AttackDamageMin"			"25"			// Damage range min.
+			"AttackDamageMax"			"28"			// Damage range max.
+			"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+			"AttackAcquisitionRange"	"600"		// Range within a target can be acquired.
+			"AttackRange"				"100"		// Range within a target can be attacked.
+		
+			// Attributes
+			//----------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+			"AttributeBaseStrength"		"21"			// Base strength
+			"AttributeStrengthGain"		"2.8"			// Strength bonus per level.
+			"AttributeBaseIntelligence"	"15"			// Base intelligence
+			"AttributeIntelligenceGain"	"1.7"			// Intelligence bonus per level.
+			"AttributeBaseAgility"		"17"			// Base agility
+			"AttributeAgilityGain"		"1.7"			// Agility bonus per level.
+		
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+			"MovementSpeed"				"300"		// Speed
+			"MovementTurnRate"			"0.6"		// Turning rate.
+			"FollowRange"				"250"		// Distance to keep when following
+		
+			// Status
+			//----------------------------------------------------------------
+			"StatusHealth"				"150"			// Base health.
+			"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+			"StatusMana"				"140"			// Base mana.
+			"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+		
+			// Team
+			//----------------------------------------------------------------
+			"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+			"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+			"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+			"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+			
+			// Vision
+			//----------------------------------------------------------------
+			"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+			"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	}
+	"npc_old_hero_furion"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"					"npc_dota_hero"
+			"override_hero" 			"npc_dota_hero_furion"
+	
+			// Abilities
+			//-------------------------------------------------------------------------------------------------------------
+			"Ability1"				"old_furion_sprout_lua"				// Ability 1
+			"Ability2"				"old_furion_teleportation_lua"		// Ability 2
+			"Ability3"				"old_furion_force_of_nature_lua"	// Ability 3
+			"Ability4"				"old_furion_wrath_of_nature_lua"	// Ability 4
+	
+			// Armor
+			//-------------------------------------------------------------------------------------------------------------
+			"ArmorPhysical"			"0"										// Physical protection.
+	
+			// Attack
+			//-------------------------------------------------------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+			"AttackDamageMin"			"14"									// Damage range min.
+			"AttackDamageMax"			"18"									// Damage range max.
+			"AttackRate"				"1.7"									// Speed of attack.
+			"AttackAcquisitionRange"	"650"									// Range within a target can be acquired.
+			// Attributes
+			//-------------------------------------------------------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+			"AttributeBaseStrength"		"17"									// Base strength
+			"AttributeStrengthGain"		"1.8"									// Strength bonus per level.
+			"AttributeBaseIntelligence"	"21"									// Base intelligence
+			"AttributeIntelligenceGain"	"2.9"									// Intelligence bonus per level.
+			"AttributeBaseAgility"		"15"									// Base agility
+			"AttributeAgilityGain"		"1.5"									// Agility bonus per level.
+	
+			// Status
+			//-------------------------------------------------------------------------------------------------------------
+			"StatusHealth"				"150"									// Base health.
+			"StatusHealthRegen"			"0.25"									// Health regeneration rate.
+			"StatusMana"				"0"										// Base mana.
+			"StatusManaRegen"			"0.01"	
+	
+			// Movement
+			//-------------------------------------------------------------------------------------------------------------
+			"MovementSpeed"				"280"									// Speed.
+			"MovementTurnRate"			"0.6"									// Turning rate.
+	
+		}
+	"npc_old_hero_lifestealer"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"					"npc_dota_hero"	// Class of entity of link to.
+			"override_hero"				"npc_dota_hero_life_stealer"
+	
+			// Abilities
+			//-------------------------------------------------------------------------------------------------------------
+			"Ability1"				"old_lifestealer_anabolic"				// Ability 1
+			"Ability2"				"old_lifestealer_feast"			// Ability 2
+			"Ability3"				"old_lifestealer_poison_sting"		// Ability 3
+			"Ability4"				"old_lifestealer_rage"		// Ability 4
+			"Ability5"				"attribute_bonus"				// Ability 9 - Bonuses.
+			"Ability6"				""				// Ability 9 - Bonuses.
+			"Ability7"				""				// Ability 9 - Bonuses.
+			"Ability8"				""				// Ability 9 - Bonuses.
+			"Ability9"				""				// Ability 9 - Bonuses.	
+	
+			// Armor
+			//-------------------------------------------------------------------------------------------------------------
+			"ArmorPhysical"			"1"										// Physical protection.
+	
+			// Attack
+			//-------------------------------------------------------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+			"AttackDamageMin"			"16"									// Damage range min.
+			"AttackDamageMax"			"18"									// Damage range max.
+			"AttackRate"				"1.7"									// Speed of attack.
+			"AttackAnimationPoint"		"0.46"									// Normalized time in animation cycle to attack.
+			"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
+			"AttackRange"				"100"									// Range within a target can be attacked.
+	//		"ProjectileModel"			"leshrac_base_attack"						// Particle system model for projectile.
+	//		"ProjectileSpeed"			"900"									// Speed of projectile.
+	
+			// Attributes
+			//-------------------------------------------------------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+			"AttributeBaseStrength"		"15"									// Base strength
+			"AttributeStrengthGain"		"1.4"									// Strength bonus per level.
+			"AttributeBaseIntelligence"	"15"									// Base intelligence
+			"AttributeIntelligenceGain"	"1.5"									// Intelligence bonus per level.
+			"AttributeBaseAgility"		"26"									// Base agility
+			"AttributeAgilityGain"		"4.05"									// Agility bonus per level.
+	
+			// Movement
+			//-------------------------------------------------------------------------------------------------------------
+			"MovementSpeed"				"295"									// Speed.
+			"MovementTurnRate"			"0.25"									// Turning rate.
+			"HasAggressiveStance"       "1"                          			// Plays alternate idle/run animation when near enemies
+	
+	
+			// Status
+			//----------------------------------------------------------------
+			"StatusHealth"				"150"			// Base health.
+			"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+			"StatusMana"				"100"			// Base mana.
+			"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+	
+			
+		}
+	"npc_old_hero_lina"//Lina Finished
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"					"npc_dota_hero"							// Class of entity of link to.
+			"override_hero"				"npc_dota_hero_lina"
+	
+			// Abilities
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityLayout"				"4"
+			"Ability1"					"old_lina_dragon_slave_lua"										// Ability 1.
+			"Ability2"					"old_lina_lsa_lua"										// Ability 2.
+			"Ability3"					"old_lina_ultimate_lua"										// Ability 3.
+			"Ability4"					"old_lina_laguna_blade_lua"										// Ability 4.
+	
+			// Armor
+			//-------------------------------------------------------------------------------------------------------------
+			"ArmorPhysical"				"0"									// Physical protection.
+	
+			// Attack
+			//-------------------------------------------------------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+			"AttackDamageMin"			"14"										// Damage range min.
+			"AttackDamageMax"			"18"										// Damage range max.
+			"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"				// Type of damage dealt. 
+			"AttackRate"				"1.7"									// Speed of attack.
+			"AttackAcquisitionRange"	"650"									// Range within a target can be acquired.
+			"AttackRange"				"600"									// Range within a target can be attacked.
+			"ProjectileSpeed"			"900"									// Speed of projectile.
+	
+			// Attributes
+			//-------------------------------------------------------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLIGENCE"
+			"AttributeBaseStrength"		"18"										// Base strength
+			"AttributeStrengthGain"		"1.5"										// Strength bonus per level.
+			"AttributeBaseIntelligence"	"19"										// Base intelligence
+			"AttributeIntelligenceGain"	"3.2"										// Intelligence bonus per level.
+			"AttributeBaseAgility"		"16"										// Base agility
+			"AttributeAgilityGain"		"1.5"										// Agility bonus per level.
+	
+			// Movement
+			//-------------------------------------------------------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+			"MovementSpeed"				"280"									// Speed.
+			"MovementTurnRate"			"0.5"									// Turning rate.
+			"HasAggressiveStance"		"0"										// Plays alternate idle/run animation when near enemies
+	
+			// Status
+			//-------------------------------------------------------------------------------------------------------------
+			"StatusHealth"				"150"									// Base health.
+			"StatusHealthRegen"			"0.25"									// Health regeneration rate.
+			"StatusMana"				"200"										// Base mana.
+			"StatusManaRegen"			"0.01"									// Mana regeneration rate.
+	
+			
+			// Vision
+			//-------------------------------------------------------------------------------------------------------------
+			"VisionDaytimeRange"		"1800"									// Range of vision during day light.
+			"VisionNighttimeRange"		"800"									// Range of vision at night time.
+	
+		}	
+	"npc_old_hero_razor"
+	{
+			// General
+			"BaseClass"					"npc_dota_hero"	// Class of entity of link to.
+			"override_hero"				"npc_dota_hero_razor"
+			//"Model" 					"models/heroes/razor/razor.mdl" // Model.
+			//"Portrait" 					"vgui/hud/heroportraits/portrait_razor" // Small image for hero selection
+			//"IdleExpression" 			"scenes/razor/razor_exp_idle_01.vcd" // custom facial animation idle
+			//"SoundSet"					"Hero_Razor"					// Name of sound set.
+			//"Level"						"1"
+			//"UnitLabel"					"Hero_Razor"
+			
+			// Abilities
+			//----------------------------------------------------------------
+			
+			"Ability1"					"old_frenzy"		// Ability 1.
+			"Ability2"					"old_razor_chain_lightning"			// Ability 2.
+			"Ability3"					"old_razor_unholy_lua"		// Ability 3.
+			"Ability4"					"old_razor_stormseeker_lua"			// Ability 4.
+			// Armor
+			//----------------------------------------------------------------
+			"ArmorPhysical"				"0"			// Physical protection.
+			//"MagicalResistance"			"25"			// Magical protection.
+		
+			// Attack
+			//----------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"			// Type of attack - melee, ranged, etc.
+			"AttackDamageMin"			"14"			// Damage range min.
+			"AttackDamageMax"			"17"			// Damage range max.
+			"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+			"AttackRate"				"1.7"			// Speed of attack.
+			"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+			"AttackAcquisitionRange"	"650"		// Range within a target can be acquired.
+			"AttackRange"				"550"		// Range within a target can be attacked.
+			//"ProjectileModel"			"razor_base_attack" // Particle system model for projectile.
+			//"ProjectileSpeed"			"2000"		// Speed of projectile.
+		
+			// Attributes
+			//----------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+			"AttributeBaseStrength"		"17"			// Base strength
+			"AttributeStrengthGain"		"1.9"			// Strength bonus per level.
+			"AttributeBaseIntelligence"	"14"			// Base intelligence
+			"AttributeIntelligenceGain"	"1.8"			// Intelligence bonus per level.
+			"AttributeBaseAgility"		"22"			// Base agility
+			"AttributeAgilityGain"		"2.5"			// Agility bonus per level.
+		
+			// Bounty
+			//----------------------------------------------------------------
+			//"BountyXP"					"0"			// Experience earn.
+			//"BountyGoldMin"				"0"			// Gold earned min.
+			//"BountyGoldMax"				"0"			// Gold earned max.
+		
+			// Bounds
+			//----------------------------------------------------------------
+			//"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+		
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+			"MovementSpeed"				"295"		// Speed
+			"MovementTurnRate"			"0.4"		// Turning rate.
+			"FollowRange"				"250"		// Distance to keep when following
+		
+			// Status
+			//----------------------------------------------------------------
+			"StatusHealth"				"150"			// Base health.
+			"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+			"StatusMana"				"200"			// Base mana.
+			"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+		
+			// Team
+			//----------------------------------------------------------------
+			//"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+			//"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+			//"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+			//"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+			
+			// Vision
+			//----------------------------------------------------------------
+			"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+			"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	}
+	"npc_old_hero_sven"//sven ready(some particle issues)
+	{
+			// General
+			// 
+			"BaseClass"					"npc_dota_hero"	// Class of entity of link to.
+			"override_hero"				"npc_dota_hero_sven"
+			
+			// Abilities
+			//----------------------------------------------------------------
+			
+			"Ability1"					"old_sven_storm_hammer_lua"			// Ability 1.
+			"Ability2"					"old_sven_great_cleave_lua"			// Ability 2.
+			"Ability3"					"old_sven_toughness_aura_lua"			// Ability 3.
+			"Ability4"					"old_sven_gods_strength_lua"		// Ability 4.
+			// Armor
+			//----------------------------------------------------------------
+			"ArmorPhysical"				"1"			// Physical protection.
+		
+			// Attack
+			//----------------------------------------------------------------
+			"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"			// Type of attack - melee, ranged, etc.
+			"AttackDamageMin"			"28"			// Damage range min.
+			"AttackDamageMax"			"32"			// Damage range max.
+			"AttackAcquisitionRange"	"650"		// Range within a target can be acquired.
+			"AttackRange"				"125"		// Range within a target can be attacked.
+		
+			// Attributes
+			//----------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+			"AttributeBaseStrength"		"23"			// Base strength
+			"AttributeStrengthGain"		"2.7"			// Strength bonus per level.
+			"AttributeBaseIntelligence"	"16"			// Base intelligence
+			"AttributeIntelligenceGain"	"1.3"			// Intelligence bonus per level.
+			"AttributeBaseAgility"		"14"			// Base agility
+			"AttributeAgilityGain"		"2.2"			// Agility bonus per level.
+		
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+			"MovementSpeed"				"300"		// Speed
+			"MovementTurnRate"			"0.6"		// Turning rate.
+			"FollowRange"				"250"		// Distance to keep when following
+		
+			// Status
+			//----------------------------------------------------------------
+			"StatusHealth"				"150"			// Base health.
+			"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+			"StatusMana"				"140"			// Base mana.
+			"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+	}
+	"npc_old_hero_venge"
+	{	
+			// General
+			"BaseClass"					"npc_dota_hero"	
+			"override_hero"				"npc_dota_hero_vengefulspirit"
+			
+			// Abilities
+			//----------------------------------------------------------------
+			
+			"Ability1"				"old_venge_magic_missile_lua"				// Ability 1
+			"Ability2"				"old_venge_terror_lua"				// Ability 2
+			"Ability3"				"old_venge_command_aura_lua"				// Ability 3
+			"Ability4"				"old_venge_nether_swap_lua"				// Ability 4
+			// Armor
+			//----------------------------------------------------------------
+			"ArmorPhysical"				"1"			// Physical protection.
+			//"MagicalResistance"			"25"			// Magical protection.
+		
+			// Attack
+			//----------------------------------------------------------------
+			//"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"			// Type of attack - melee, ranged, etc.
+			"AttackDamageMin"			"8"			// Damage range min.
+			"AttackDamageMax"			"10"			// Damage range max.
+			//"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+			"AttackRate"				"1.8"			// Speed of attack.
+			//"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+			"AttackAcquisitionRange"	"650"		// Range within a target can be acquired.
+			//"AttackRange"				"400"		// Range within a target can be attacked.
+			// Attributes
+			//----------------------------------------------------------------
+			"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+			"AttributeBaseStrength"		"16"			// Base strength
+			"AttributeStrengthGain"		"1.8"			// Strength bonus per level.
+			"AttributeBaseIntelligence"	"15"			// Base intelligence
+			"AttributeIntelligenceGain"	"1.75"			// Intelligence bonus per level.
+			"AttributeBaseAgility"		"22"			// Base agility
+			"AttributeAgilityGain"		"2.65"			// Agility bonus per level.
+		
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+			"MovementSpeed"				"300"		// Speed
+			"MovementTurnRate"			"0.6"		// Turning rate.
+			"FollowRange"				"250"		// Distance to keep when following
+		
+			// Status
+			//----------------------------------------------------------------
+			"StatusHealth"				"150"			// Base health.
+			"StatusHealthRegen"			"0.25"			// Health regeneration rate.
+			"StatusMana"				"100"			// Base mana.
+			"StatusManaRegen"			"0.01"			// Mana regeneration rate.
+		
+			// Team
+			//----------------------------------------------------------------
+			//"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+			//"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+			//"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+			//"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+			
+			// Vision
+			//----------------------------------------------------------------
+			"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+			"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	}
+}
