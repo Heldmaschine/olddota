@@ -46,10 +46,10 @@ end
 
 function modifier_old_sven_toughness_aura_emitter_lua:OnCreated( kv )
 	self.aura_radius = self:GetAbility():GetSpecialValueFor( "aura_radius" )
-	--[[ May not be needed since reborn
+	--[[ remove when find better workaround]]
 	if IsServer() then--and self:GetParent() ~= self:GetCaster() then
-		self:StartIntervalThink( 0.5 )
-	end]]
+		self:StartIntervalThink(0.03)
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ function modifier_old_sven_toughness_aura_emitter_lua:OnIntervalThink()
 			else
 				stick_duration = ostick_duration 
 			end
-			ally:AddNewModifier( self:GetCaster(), self, "modifier_old_sven_toughness_aura_lua", { duration = stick_duration, tooltip_duration = stick_duration } )
+			ally:AddNewModifier( self:GetCaster(), self, self:GetModifierAura(), { duration = stick_duration, tooltip_duration = stick_duration } )
 		end
 	end
 end

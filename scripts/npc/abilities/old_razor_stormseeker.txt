@@ -13,20 +13,20 @@
 	"ScriptFile"	"old_razor_stormseeker_lua"
 	"AbilitySpecial"
 	{	
-	"01"
-	{
-		"var_type" "FIELD_INTEGER"
-		"aura_radius" "500 550 600"
-	}
-	"02"
-	{
-		"var_type" "FIELD_INTEGER"
-		"aura_damage_per_tick" "60 90 120"
-	}
-	"03"
-	{
-		"var_type" "FIELD_FLOAT"
-		"aura_damage_interval" "3.25"
-	}
+		"01"
+		{
+			"var_type" "FIELD_INTEGER"
+			"aura_radius" "500 550 600"
+		}
+		"02"
+		{
+			"var_type" "FIELD_INTEGER"
+			"aura_damage_per_tick" "60 90 120"
+		}
+		"03"
+		{
+			"var_type" "FIELD_FLOAT"
+			"aura_damage_interval" "3.25"
+		}
 	}
 }

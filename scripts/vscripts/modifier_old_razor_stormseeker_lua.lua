@@ -73,20 +73,5 @@ function modifier_old_razor_stormseeker_lua:OnRefresh( kv )
 	self.damage = self:GetAbility():GetSpecialValueFor( "aura_damage_per_tick" )
 end
 
----------------------------------------------------------------------------------
-
-function modifier_old_razor_stormseeker_lua:OnIntervalThink()
-	if IsServer() then--and self:GetParent() ~= self:GetCaster() then
-		local enemies = FindUnitsInRadius(self:GetCaster():GetTeamNumber() , self:GetCaster():GetOrigin() , nil , self:GetAuraRadius(), self:GetAuraSearchTeam(), self:GetAuraSearchFlags(), self:GetAuraSearchFlags(), 0, false)
-		if #enemies > 0 then
-			for _,enemy in pairs(enemies) do
-				local debuff = enemy:FindModifierByName("modifier_old_razor_stormseeker_effect_lua")
-				if debuff ~= nil then
-					debuff:OnIntervalThink()
-				end
-			end
-		end
-	end
-end
 -----------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------

@@ -16,6 +16,9 @@ end
 
 function modifier_old_razor_stormseeker_effect_lua:OnCreated( kv )
 	self.damage = self:GetAbility():GetSpecialValueFor( "aura_damage_per_tick" )
+		if IsServer() then
+		self:StartIntervalThink( self.interval )
+	end
 end
 
 --------------------------------------------------------------------------------
