@@ -188,7 +188,7 @@
 			"Ability1"					"old_davion_breathe_fire"			// Ability 1.
 			"Ability2"					"old_davion_dragon_tail"			// Ability 2.
 			"Ability3"					"old_davion_dragon_blood_lua"			// Ability 3.
-			"Ability4"					"old_davion_elder_dragon_form_lua"		// Ability 4.
+			"Ability4"					"old_davion_elder_dragon_form"		// Ability 4.
 			// Armor
 			//----------------------------------------------------------------
 			"ArmorPhysical"				"2"			// Physical protection.
@@ -551,8 +551,8 @@
 			//----------------------------------------------------------------
 			
 			"Ability1"					"old_terrorblade_soulsteal"		// Ability 1.
-			"Ability2"					"old_terrorblade_conjure_image"			// Ability 2.
-			"Ability3"					"old_terrorblade_metamorhosis"		// Ability 3.
+			"Ability2"					"old_terrorblade_conjure_image_lua"			// Ability 2.
+			"Ability3"					"old_terrorblade_metamorphosis"		// Ability 3.
 			"Ability4"					"old_terrorblade_sunder"			// Ability 4.
 			// Armor
 			//----------------------------------------------------------------
@@ -582,7 +582,7 @@
 			// Movement
 			//----------------------------------------------------------------
 			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-			"MovementSpeed"				"310"		// Speed
+			"MovementSpeed"				"320"		// Speed
 			"MovementTurnRate"			"0.5"		// Turning rate.
 			"FollowRange"				"250"		// Distance to keep when following
 		
