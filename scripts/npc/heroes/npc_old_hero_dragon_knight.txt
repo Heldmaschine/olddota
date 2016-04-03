@@ -11,7 +11,7 @@
 		"Ability1"					"old_davion_breathe_fire"			// Ability 1.
 		"Ability2"					"old_davion_dragon_tail"			// Ability 2.
 		"Ability3"					"old_davion_dragon_blood_lua"			// Ability 3.
-		"Ability4"					"old_davion_elder_dragon_form_lua"		// Ability 4.
+		"Ability4"					"old_davion_elder_dragon_form"		// Ability 4.
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"2"			// Physical protection.

@@ -1,7 +1,7 @@
-"old_davion_elder_dragon_form_lua"
+"old_davion_elder_dragon_form"
 {
 	//TODO: Rewrite lvl 1&2 to giff bonus HP
-	"BaseClass"						"ability_lua"
+	"BaseClass"						"dragon_knight_elder_dragon_form"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -9,7 +9,7 @@
 	"AbilityType" 					"DOTA_ABILITY_TYPE_ULTIMATE"
 	"MaxLevel"						"3"
 	"AbilityTextureName"			"dragon_knight_elder_dragon_form"
-	"ScriptFile"					"old_davion_elder_dragon_form_lua"
+	//"ScriptFile"					"old_davion_elder_dragon_form_lua"
 	// Time
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityCooldown" "135.0"
@@ -19,20 +19,98 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilitySpecial"
 	{
+
 		"01"
-		{
-			"var_type"		"FIELD_INTEGER"
-			"bonus_health"	"100 200 0"
-		}
-		"02"
 		{
 			"var_type"			"FIELD_FLOAT"
 			"duration"			"110.0"
 		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_movement_speed"		"25 25 25"
+		}
 		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_attack_range"		"372 372 372"
+		}
+		"05"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"corrosive_breath_damage"	"20 0 0"
+		}
+		"06"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"corrosive_breath_duration"	"5.0 0.0 0.0"
+		}
+		"07"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"splash_radius"				"150 225 300"
+		}
+		"08"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"splash_damage_percent"		"100 75 50"
+		}
+		"09"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"frost_bonus_movement_speed"	"-30"
+		}
+		"10"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"frost_bonus_attack_speed"		"-20"
+		}
+		"11"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"frost_duration"				"3.0 3.0 3.0"
+		}
+		"12"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"frost_aoe"					"300"
+		}
+		"13"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"bonus_health"	"100 200 0"
+		}
+		"14"
 		{
 			"var_type"		"FIELD_INTEGER"
 			"bonus_damage"	"0 10 45"
+		}
+	}
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"ModifierName"	"modifier_old_davion_dragon_bonus"
+			"Target" 		"TARGET"
+			"Duration"		"%duration"
+		}
+	}
+	"Modifiers"
+	{
+		"modifier_old_davion_dragon_bonus"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"IsDebuff"			"0"
+	
+			//"EffectName"		"particle_name"
+			//"EffectAttachType"	"follow_origin"
+	
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%bonus_damage"
+			    "MODIFIER_PROPERTY_HEALTH_BONUS" "%bonus_health" 
+			}
 		}
 	}
 }
