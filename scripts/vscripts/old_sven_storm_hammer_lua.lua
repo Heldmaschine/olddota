@@ -19,7 +19,7 @@ end
 
 function old_sven_storm_hammer_lua:OnSpellStart()
 	local bolt_speed = self:GetSpecialValueFor( "bolt_speed" )
-
+	if IsServer() then
 	local info = {
 			EffectName = "particles/units/heroes/hero_sven/sven_spell_storm_bolt.vpcf",
 			Ability = self,
@@ -32,6 +32,7 @@ function old_sven_storm_hammer_lua:OnSpellStart()
 		}
 
 	ProjectileManager:CreateTrackingProjectile( info )
+	end
 	EmitSoundOn( "Hero_Sven.StormBolt", self:GetCaster() )
 end
 
